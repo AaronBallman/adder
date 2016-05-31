@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <iostream>
 
 struct one_bit {
   static const unsigned value = 1;
@@ -118,6 +118,6 @@ struct four_bit_adder {
 
 int main(void) {
   static const unsigned ret = four_bit_adder<NUMBER_1, NUMBER_2>::value;
-  printf("%d\n", ret);
+  std::cout << ret << std::endl;
   return 0;
 }
